@@ -1,0 +1,29 @@
+<error-tag errorData = input.errorData/>
+$ var renderData = input.reRenderData;
+<form method="post" action="/users/register" >
+  <div class="form-group" >
+    <label for="name">Name</label>
+    <input type="text" name="name" class="form-control" id="name" value=(renderData && renderData.name)>
+  </div>
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input type="email" name="email" class="form-control" id="email" value=(renderData && renderData.email)>
+  </div>
+    <div class="form-group">
+    <label for="username">Username</label>
+    <input type="text" name="username" class="form-control" id="username" value=(renderData && renderData.username)>
+  </div>
+  <div class="form-group">
+    <label for="password">Password</label>
+    <input type="password" name="password" class="form-control" id="password">
+  </div>
+  <div class="form-group">
+    <label for="cnfpassword">Confirm Password</label>
+    <input type="password" name="cnfpassword" class="form-control" id="cnfpassword">
+  </div>
+  <div class="form-group">
+    <label for="profImage">Profile Image</label>
+    <input type="file" name="profImage" class="form-control" id="profImage">
+  </div>
+  <button type="submit" class="btn btn-default">Registe</button>
+</form>
